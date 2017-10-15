@@ -1,0 +1,55 @@
+body {
+  margin-top: 3rem;
+  background: #white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+span {
+  text-align: center;
+  font-family: fantasy;
+  font-size: 35px;
+  color: red;
+  text-decoration: underline;
+  padding-right: 10rem;
+}
+.photo {
+  /*margin: 5px 0;*/
+  /*width: 50%;*/
+  background: black;
+  padding: 10px;
+  opacity: 0.7;
+  border-radius: 10px;
+  border: 3px solid silver;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  transform: rotate(5deg);
+  transition: 0.3s all ease-in-out;
+}
+.photo img {
+  flex-basis: 10%;
+  width: 50%;
+}
+.photo figcaption {
+  margin-top: 20px;
+  width: 60%;
+  color: green;
+  font-size: 25px;
+  line-height: inherit;
+  font-family: fantasy;
+  text-align: center;
+}
+
+.photo:nth-child(even) {
+  transform: rotate(-2deg) scale(0.8);
+} /*even - co drugi - czyli każde parzyste*/
+
+.photo:hover {
+  opacity: 1;
+  /*transition: 0.3s all linear;*/
+  transform: scale(1.1);
+}
